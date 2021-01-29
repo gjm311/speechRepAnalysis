@@ -1,0 +1,67 @@
+{
+    "general": {
+        "FS":16000,
+        "UNITS":256,
+        "ae_tst_percent":0.65
+        },
+    
+    "wavelet": {
+        "SNIP_LEN":50,
+        "NBF":64,
+        "TIME_STEPS":256,
+        "OVRLP":0.5
+        },
+    "mel_spec": {
+        "SNIP_LEN":500,
+        "INTERP_NMELS":128,
+        "BB_TIME_WINDOW": 0.005,
+        "BB_HOP": 0.003,
+        "BB_NMELS":64,
+        "NB_TIME_WINDOW": 0.03,
+        "NB_HOP": 0.01,
+        "NB_NMELS":128,
+        "FRAME_SIZE":0.5,
+        "TIME_SHIFT":0.25,
+        "TIME_STEPS":126,
+        "NFFT":1024
+        },
+    
+    "CAE": {
+        "NVAL": 500,
+        "NTRAIN":6000,
+        "N_EPOCHS":25,
+        "LR":0.0001,
+        "NUM_W":0,
+        "BATCH_SIZE":16
+        },    
+    
+    "RAE": {
+        "NVAL":500,
+        "NTRAIN":6000,
+        "N_EPOCHS":25,
+        "LR":0.0001,
+        "NUM_W": 0,
+        "BATCH_SIZE":100
+        },      
+    
+    "svm": {
+        "iterations": 3,
+        "tst_spks":30,
+        "val_size":0.05685,
+        "nsplits":4,
+        "in_iters":8
+        },
+    "dnn": {
+        "dropout": 0.5,
+        "BATCH_SIZE": 250,
+        "NUM_W": 0,
+        "N_EPOCHS": 500,
+        "LR": 10e-5,
+        "tst_spks":10,
+        "val_spks":10,
+        "num_iters":24
+        
+        }
+    
+    
+}
